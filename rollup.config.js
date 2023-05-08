@@ -43,7 +43,7 @@ export default [
       {
         name: "reactSimpleMaps",
         file: pkg.main,
-        format: "cjs",
+        format: "es",
       },
       {
         file: pkg.module,
