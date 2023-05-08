@@ -3,9 +3,9 @@
   "version": "3.0.0",
   "description": "An svg map chart component built with and for React",
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "browser": "dist/index.umd.js",
+  "main": "dist/index.esm.js",
+  "module": "dist/index.umd.js",
+  "browser": "dist/index.esm.js",
   "files": [
     "dist"
   ],
@@ -39,15 +39,16 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.18.6",
     "@babel/plugin-transform-react-jsx": "^7.18.6",
     "@babel/preset-env": "^7.18.6",
-    "@rollup/plugin-babel": "^5.3.1",
-    "@rollup/plugin-commonjs": "^22.0.1",
-    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-terser": "^0.4.1",
     "expect": "^23.5.0",
     "mocha": "^5.2.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "rollup": "^2.75.7"
+    "rollup": "^3.21.5"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
@@ -58,7 +59,6 @@
     "d3-geo": "^2.0.2",
     "d3-selection": "^2.0.0",
     "d3-zoom": "^2.0.0",
-    "rollup-plugin-terser": "^7.0.2",
     "topojson-client": "^3.1.0"
   }
 }
