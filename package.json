@@ -2,12 +2,12 @@
   "name": "react-simple-maps",
   "version": "3.0.0",
   "description": "An svg map chart component built with and for React",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "build": "babel src --out-dir dist",
     "watch": "rollup -cw",
     "prepare": "rollup -c",
     "test": "mocha './tests/**/*.spec.js' --compilers js:babel-core/register"
@@ -31,11 +31,13 @@
   },
   "homepage": "https://github.com/zcreativelabs/react-simple-maps#readme",
   "devDependencies": {
-    "@babel/core": "^7.18.6",
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
     "@babel/plugin-external-helpers": "^7.18.6",
     "@babel/plugin-proposal-object-rest-spread": "^7.18.6",
     "@babel/plugin-transform-react-jsx": "^7.18.6",
-    "@babel/preset-env": "^7.18.6",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-react": "^7.18.6",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^24.1.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
