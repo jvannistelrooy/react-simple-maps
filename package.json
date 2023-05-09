@@ -7,10 +7,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "babel src --out-dir dist",
-    "watch": "rollup -cw",
-    "prepare": "rollup -c",
-    "test": "mocha './tests/**/*.spec.js' --compilers js:babel-core/register"
+    "build": "babel src --out-dir dist"
   },
   "repository": {
     "type": "git",
